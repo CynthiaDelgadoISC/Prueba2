@@ -6,7 +6,7 @@ app.use(bodyParser.json());
 
 
 
-app.post("/Ejercicio1", (req, res) => {
+app.get("/Ejercicio1", (req, res) => {
   //Se parsea a numero el valor que se recibe
   let numDecimal=parseInt(req.query.numero);
   //Se convierte el numero decimal a binario
@@ -36,7 +36,7 @@ app.post("/Ejercicio1", (req, res) => {
 });
 
 
-app.post("/Ejercicio2", (req, res) => {
+app.get("/Ejercicio2", (req, res) => {
   //Se parsea a entero el valor que llega
   let numero=parseInt(req.query.numero);
   //Se parsea a array el string que llega
